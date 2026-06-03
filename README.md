@@ -1,38 +1,35 @@
-# 🛡️ SOC Training Progress - LetsDefend
 
-Welcome to my repository for tracking my Security Operations Center (SOC) analytical training and hands-on lab progress through [LetsDefend](https://letsdefend.io/). This repository serves as a personal log to document my daily learning, case investigations, and practical blue-team skills.
+# 🛡️ Cybersecurity & SOC Analyst Training Portfolio
 
----
-
-## 🚀 Current Status
-* **Current Path:** SOC Analyst Track
-* **Overall Progress:** ⏳ In Progress
-* **Latest Update:** June 2026
+Welcome to my cybersecurity portfolio! This repository tracks my hands-on laboratory experiences, theoretical mastery, and practical threat analysis skills developed via blue-team training platforms like LetsDefend.
 
 ---
 
-## 📊 Monthly Progress Tracker
+## 🛠️ Hands-on Labs & Technical Progress
 
-### 📅 June 2026
-| Date | Lab / Case Name | Category | Status | Notes / Takeaways |
-| :--- | :--- | :--- | :--- | :--- |
-| 03/06 | *Example: SOC142 - Phishing Email* | Phishing | ✅ Completed | Analyzed email headers, extracted malicious URL. |
-| --/06 | *Example: SOC167 - Malware Detected* | Endpoint | ⏳ In Progress | Analyzing process tree in EDR. |
+### 1. Log Management (SIEM & Log Analysis)
+* **Status:** In Progress (50% Concepts Completed) ✅
+* **Key Skills Demonstrated:**
+    * **Log Centralization:** Understood how log management solutions consolidate data from multiple telemetry sources (Proxy, Exchange, Firewall) to run enterprise-wide queries from a single interface.
+    * **Network Triage & Scoping:** Learned how to sweep network logs using Indicators of Compromise (IoCs) to find secondary compromised hosts after an initial SIEM alert triggers.
+* **Practical Lab Milestone Questions Solved:**
+    * *Identified a suspicious external connection targeting a developer repository route (`https://github.com/apache/flink/compare`) by extracting the raw source IP address from web/proxy telemetry.*
+    * *Analyzed and classified log types by mapping network signatures, identifying traffic from source IP `8.8.8.8` to destination port `52567` explicitly as a **DNS log**.*
+
+### 2. Common Mistakes made by SOC Analysts
+* **Status:** Training Review Completed ✅
+* **Key Skills Demonstrated:**
+    * **Advanced Threat Intel Validation:** Learned to avoid over-reliance on a clean VirusTotal status screen by accounting for modern AV evasion techniques. 
+    * **Sandbox Evasion Recognition:** Mastered how to counter timing-based malware evasion (stalling execution for 10-15 minutes) by adjusting sandbox analysis constraints.
+    * **Cache Integrity:** Identified how to check scan timestamps to avoid relying on stale, cached reputation data for high-risk URLs.
 
 ---
 
-## 🛠️ Skills & Tools Practiced
-Through these labs, I am gaining hands-on experience with:
-* **SIEM:** Log analysis, event correlation, and alert triaging.
-* **EDR:** Checking process trees, network connections, and memory dumps.
-* **Email Security:** Header analysis, SPF/DKIM/DMARC checks, and attachment sandboxing.
-* **Threat Intelligence:** Utilizing VirusTotal, AbuseIPDB, and Cisco Talos.
+## 🚀 Technical Skills Summary
+* **Log Analysis & Triage:** SIEM concepts, log correlation across Proxy, Firewall, and Exchange environments.
+* **Threat Intelligence:** Querying and analyzing reputation databases (VirusTotal, AbuseCH).
+* **Protocol & Port Mapping:** Mapping network activities to standardized services (e.g., Identifying DNS attributes).
+* **Incident Investigation:** Enterprise scoping, identifying lateral movement patterns, and isolating compromised assets.
 
 ---
-
-## 📝 Key Takeaways & Methodology
-For every alert I investigate on LetsDefend, I follow the standard incident response lifecycle:
-1. **Detection:** Reviewing the alert details and logs.
-2. **Analysis:** Verifying logs, checking host/network activity, and gathering OSINT.
-3. **Containment:** Isolating affected hosts or blocking malicious IPs/domains if deemed a true positive.
-4. **Determination:** Finalizing the playbook as either a **True Positive (TP)** or **False Positive (FP)**.
+*Connect with me if you want to talk security, threat hunting, or blue teaming!*
